@@ -40,3 +40,17 @@ export const uploadthing = () =>
     },
     runtimeEnv: process.env,
   });
+
+/**
+ * Supabase Environment Variables
+ *   @see https://supabase.com/docs/guides/getting-started/quickstarts/nextjs
+ */
+
+export const supabase = () =>
+  createEnv({
+    server: {
+      NEXT_PUBLIC_SUPABASE_URL: z.string().optional(),
+      NEXT_PUBLIC_SUPABASE_ANON_KEY: z.string().optional(),
+    },
+    runtimeEnv: process.env,
+  });
