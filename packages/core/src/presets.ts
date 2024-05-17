@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { createEnv } from ".";
-export * from "@t3-oss/env-core/presets";
+
 /**
  * Vercel System Environment Variables
  * @see https://vercel.com/docs/projects/environment-variables/system-environment-variables#system-environment-variables
